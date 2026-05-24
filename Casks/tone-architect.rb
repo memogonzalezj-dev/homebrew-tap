@@ -12,8 +12,7 @@ cask "tone-architect" do
 
   app "Tone Architect.app"
 
-  # App is unsigned — remove quarantine so macOS doesn't block launch
-  postflight do
+  postinstall do
     system_command "/usr/bin/xattr",
                    args: ["-rd", "com.apple.quarantine", "#{appdir}/Tone Architect.app"]
   end
