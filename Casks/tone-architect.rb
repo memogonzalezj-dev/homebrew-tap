@@ -12,11 +12,6 @@ cask "tone-architect" do
 
   app "Tone Architect.app"
 
-  postinstall do
-    system_command "/usr/bin/xattr",
-                   args: ["-rd", "com.apple.quarantine", "#{appdir}/Tone Architect.app"]
-  end
-
   zap trash: [
     "~/Library/Application Support/tone-architect",
   ]
