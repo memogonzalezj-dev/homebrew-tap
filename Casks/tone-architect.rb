@@ -1,6 +1,6 @@
 cask "tone-architect" do
   version "1.5.0"
-  sha256 "9c81daf38dbc424d057ca76ab78d521a5b79406ae119569e2b00beb6f2e21d57"
+  sha256 "e8576a43acca4da39a76d21fe5bbabe9bfc6cf484649bb6294839b24dc4849f7"
 
   url "https://github.com/memogonzalezj-dev/ToneArchitect/releases/download/v#{version}/Tone.Architect-#{version}-arm64.dmg"
   name "Tone Architect"
@@ -12,9 +12,7 @@ cask "tone-architect" do
 
   app "Tone Architect.app"
 
-  zap trash: [
-    "~/Library/Application Support/tone-architect",
-  ]
+  zap trash: ["~/Library/Application Support/tone-architect"]
 
   caveats <<~EOS
     Tone Architect requires Apple Silicon (M1 or later).
