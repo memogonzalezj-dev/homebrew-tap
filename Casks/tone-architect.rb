@@ -1,6 +1,6 @@
 cask "tone-architect" do
   version "1.5.0"
-  sha256 "e8576a43acca4da39a76d21fe5bbabe9bfc6cf484649bb6294839b24dc4849f7"
+  sha256 "327f01285d63fc248e0379e1a83668020587a05e8ab9e67d4dcb9264de37917d"
 
   url "https://github.com/memogonzalezj-dev/ToneArchitect/releases/download/v#{version}/Tone.Architect-#{version}-arm64.dmg"
   name "Tone Architect"
